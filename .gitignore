@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+
+# Node.js
+node_modules/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Environment/Sensitive files
+.env
+# .gitattributes
+
+* text=auto
+*.sh text eol=lf
+*.ipynb text eol=lf
+*.py text eol=lf

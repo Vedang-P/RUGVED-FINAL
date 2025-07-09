@@ -1,0 +1,2 @@
+FINAL[[:space:]]TASK/data/saved_models2/training_model.pth filter=lfs diff=lfs merge=lfs -text
+FINAL[[:space:]]TASK/data/Oracle_JDK-24/lib/modules filter=lfs diff=lfs merge=lfs -text
