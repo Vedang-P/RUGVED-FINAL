@@ -19,7 +19,7 @@ This task involves building the **Transformer architecture from scratch**, based
      - Position-wise Feedforward Layers
      - Encoder-Decoder architecture
 
-3. 🧪 **(Optional)** Train your model on the following dataset:  
+3. 🧪 Train your model on the following dataset:  
    [Hugging Face CodeXGLUE: Code-to-Code Translation (Java ↔ C#)](https://huggingface.co/datasets/google/code_x_glue_cc_code_to_code_trans)
 
 ---
@@ -51,7 +51,7 @@ This task involves building the **Transformer architecture from scratch**, based
 
 ---
 
-## 📊 Dataset (Optional)
+## 📊 Dataset 
 
 **CodeXGLUE: Code-to-Code Translation**  
 - Tasks: Translate Java ↔ C# code snippets  
