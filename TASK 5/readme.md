@@ -63,14 +63,6 @@ Focus especially on **ROS Actions**, which are **not covered in the video playli
 
 ---
 
-## 🙋 Help & Collaboration
-
-If you run into installation errors, dependency issues, or conceptual blocks:
-- Ask your seniors (they've likely faced the same)
-- Refer to the ROS2 issue tracker or [ROS Answers](https://answers.ros.org/questions/)
-
----
-
 ## 📌 Notes
 
 This task is foundational for anyone moving into:
