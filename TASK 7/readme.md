@@ -24,19 +24,6 @@ Covers how to:
 
 ---
 
-## 🗂️ Files Included
-
-| File/Folder              | Description                                    |
-|--------------------------|------------------------------------------------|
-| `rgb/`                   | Folder containing RGB images                   |
-| `depth/`                 | Folder containing corresponding depth images   |
-| `camera_intrinsics.json`| Camera parameters for projection (optional)    |
-| `task8_pointcloud.py`    | Python script to generate point cloud          |
-| `task8_detection.py`     | Python script for object detection in 3D       |
-| `pointcloud.ply`         | Generated point cloud file (Open3D format)     |
-
----
-
 ## 💻 Requirements
 
 Install dependencies:
