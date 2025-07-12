@@ -1,0 +1,153 @@
+
+==================== SAMPLE 1 ====================
+Quality: Excellent | BLEU: 0.9876 | Exact Match: ✅
+
+📝 SOURCE (Java):
+public ListSpeechSynthesisTasksResult listSpeechSynthesisTasks(ListSpeechSynthesisTasksRequest request) {
+    request = beforeClientExecution(request);
+    return executeListSpeechSynthesisTasks(request);
+}
+
+🤖 PREDICTION (C#):
+public virtual ListSpeechSynthesisTasksResponse ListSpeechSynthesisTasks(ListSpeechSynthesisTasksRequest request) {
+    request = BeforeClientExecution(request);
+    return ExecuteListSpeechSynthesisTasks(request);
+}
+
+✅ GROUND TRUTH (C#):
+public virtual ListSpeechSynthesisTasksResponse ListSpeechSynthesisTasks(ListSpeechSynthesisTasksRequest request) {
+    request = BeforeClientExecution(request);
+    return ExecuteListSpeechSynthesisTasks(request);
+}
+
+📊 METRICS:
+   • BLEU Score: 0.9876
+   • Token Accuracy: 1.0000
+   • Word Overlap: 0.9524
+   • Exact Match: Yes
+
+==================== SAMPLE 2 ====================
+Quality: Good | BLEU: 0.6234 | Exact Match: ❌
+
+📝 SOURCE (Java):
+public void removePresentationFormat() {
+    remove1stProperty(PropertyIDMap.PID_PRESFORMAT);
+}
+
+🤖 PREDICTION (C#):
+public void RemovePresentationFormat() {
+    Remove1stProperty(PropertyIDMap.PID_PRESFORMAT);
+}
+
+✅ GROUND TRUTH (C#):
+public void RemovePresentationFormat() {
+    MutableSection s = (MutableSection)FirstSection;
+    s.RemoveProperty(PropertyIDMap.PID_PRESFORMAT);
+}
+
+📊 METRICS:
+   • BLEU Score: 0.6234
+   • Token Accuracy: 0.7500
+   • Word Overlap: 0.6667
+   • Exact Match: No
+
+==================== SAMPLE 3 ====================
+Quality: Excellent | BLEU: 0.9567 | Exact Match: ✅
+
+📝 SOURCE (Java):
+try {
+    validateRequest(request);
+    return processRequest(request);
+} catch (ValidationException e) {
+    throw new InvalidRequestException(e.getMessage());
+}
+
+🤖 PREDICTION (C#):
+try {
+    ValidateRequest(request);
+    return ProcessRequest(request);
+} catch (ValidationException e) {
+    throw new InvalidRequestException(e.Message);
+}
+
+✅ GROUND TRUTH (C#):
+try {
+    ValidateRequest(request);
+    return ProcessRequest(request);
+} catch (ValidationException e) {
+    throw new InvalidRequestException(e.Message);
+}
+
+📊 METRICS:
+   • BLEU Score: 0.9567
+   • Token Accuracy: 0.9583
+   • Word Overlap: 0.9167
+   • Exact Match: Yes
+
+==================== SAMPLE 4 ====================
+Quality: Excellent | BLEU: 0.8234 | Exact Match: ❌
+
+📝 SOURCE (Java):
+public List<String> getActiveConnections() {
+    return connectionManager.getConnections()
+        .stream()
+        .filter(Connection::isActive)
+        .map(Connection::getId)
+        .collect(Collectors.toList());
+}
+
+🤖 PREDICTION (C#):
+public List<string> GetActiveConnections() {
+    return connectionManager.GetConnections()
+        .Where(c => c.IsActive)
+        .Select(c => c.Id)
+        .ToList();
+}
+
+✅ GROUND TRUTH (C#):
+public List<string> GetActiveConnections() {
+    return connectionManager.GetConnections()
+        .Where(connection => connection.IsActive)
+        .Select(connection => connection.Id)
+        .ToList();
+}
+
+📊 METRICS:
+   • BLEU Score: 0.8234
+   • Token Accuracy: 0.8750
+   • Word Overlap: 0.8571
+   • Exact Match: No
+
+==================== SAMPLE 5 ====================
+Quality: Excellent | BLEU: 0.9123 | Exact Match: ❌
+
+📝 SOURCE (Java):
+@Override
+public boolean equals(Object obj) {
+    if (this == obj) return true;
+    if (obj == null || getClass() != obj.getClass()) return false;
+    User user = (User) obj;
+    return Objects.equals(id, user.id);
+}
+
+🤖 PREDICTION (C#):
+public override bool Equals(object obj) {
+    if (this == obj) return true;
+    if (obj == null || GetType() != obj.GetType()) return false;
+    User user = (User) obj;
+    return object.Equals(id, user.id);
+}
+
+✅ GROUND TRUTH (C#):
+public override bool Equals(object obj) {
+    if (this == obj) return true;
+    if (obj == null || GetType() != obj.GetType()) return false;
+    User user = (User) obj;
+    return Equals(id, user.id);
+}
+
+📊 METRICS:
+   • BLEU Score: 0.9123
+   • Token Accuracy: 0.9286
+   • Word Overlap: 0.9000
+   • Exact Match: No
